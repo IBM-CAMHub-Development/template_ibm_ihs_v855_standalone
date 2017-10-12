@@ -26,6 +26,10 @@
     {
       "name": "ihsnode01",
       "label": "IHSNode01"
+    },
+    {
+      "name": "ungrouped",
+      "label": "ungrouped"
     }
   ],
   "output_groups": [
@@ -103,16 +107,15 @@
       "group_name": "virtualmachine"
     },
     {
-      "name": "IHSNode01_ihs_version",
+      "name": "IHSNode01_domain",
       "type": "string",
-      "description": "The version of IBM HTTP Server to install",
-      "default": "8.5.5.12",
+      "description": "Domain Name of virtual machine",
       "hidden": false,
-      "label": "IBM HTTP Server install version - IHSNode01",
+      "label": "Domain Name - IHSNode01",
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "ihsnode01"
+      "group_name": "virtualmachine"
     },
     {
       "name": "IHSNode01_ihs_java_version",
@@ -121,64 +124,6 @@
       "default": "8.0.4.70",
       "hidden": true,
       "label": "IBM HTTP Server Java version - IHSNode01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "ihsnode01"
-    },
-    {
-      "name": "IHSNode01_ihs_java_legacy",
-      "type": "string",
-      "description": "The Java version to be used with IBM HTTP Server version 8.5.5",
-      "hidden": false,
-      "label": "IBM HTTP Server v855 Java version - IHSNode01",
-      "secured": false,
-      "options": [
-        {
-          "value": "java6",
-          "label": "java6"
-        },
-        {
-          "value": "java8",
-          "label": "java8",
-          "default": true
-        }
-      ],
-      "required": true,
-      "immutable": false,
-      "group_name": "ihsnode01"
-    },
-    {
-      "name": "IHSNode01_ihs_install_dir",
-      "type": "string",
-      "description": "The directory to install IBM HTTP Server",
-      "default": "/opt/IBM/HTTPServer",
-      "hidden": false,
-      "label": "IBM HTTP Server installation directory - IHSNode01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "ihsnode01"
-    },
-    {
-      "name": "IHSNode01_ihs_plugin_install_dir",
-      "type": "string",
-      "description": "IBM HTTP Server Plugin Installation Direcrtory",
-      "default": "/opt/IBM/WebSphere/Plugins",
-      "hidden": false,
-      "label": "IBM HTTP Server plugin installation directory - IHSNode01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "ihsnode01"
-    },
-    {
-      "name": "IHSNode01_ihs_plugin_was_webserver_name",
-      "type": "string",
-      "description": "IBM HTTP Server Plugin Hostname, normally the FQDN",
-      "default": "webserver1",
-      "hidden": false,
-      "label": "IBM HTTP Server plugin hostname - IHSNode01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -209,18 +154,6 @@
       "group_name": "ihsnode01"
     },
     {
-      "name": "IHSNode01_ihs_admin_server_username",
-      "type": "string",
-      "description": "IBM HTTP Server Admin Server username",
-      "default": "ihsadmin",
-      "hidden": false,
-      "label": "IBM HTTP Server admin server username - IHSNode01",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "ihsnode01"
-    },
-    {
       "name": "IHSNode01_ihs_admin_server_password",
       "type": "string",
       "description": "IBM HTTP Server Admin Server Password",
@@ -238,6 +171,42 @@
       "default": "8008",
       "hidden": true,
       "label": "IBM HTTP Server admin server port - IHSNode01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "ihsnode01"
+    },
+    {
+      "name": "IHSNode01_ihs_admin_server_username",
+      "type": "string",
+      "description": "IBM HTTP Server Admin Server username",
+      "default": "ihsadmin",
+      "hidden": false,
+      "label": "IBM HTTP Server admin server username - IHSNode01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "ihsnode01"
+    },
+    {
+      "name": "IHSNode01_ihs_version",
+      "type": "string",
+      "description": "The version of IBM HTTP Server to install",
+      "default": "9.0.0.4",
+      "hidden": false,
+      "label": "IBM HTTP Server install version - IHSNode01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "ihsnode01"
+    },
+    {
+      "name": "IHSNode01_ihs_install_dir",
+      "type": "string",
+      "description": "The directory to install IBM HTTP Server",
+      "default": "/opt/IBM/HTTPServer",
+      "hidden": false,
+      "label": "IBM HTTP Server installation directory - IHSNode01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -262,6 +231,30 @@
       "default": "true",
       "hidden": true,
       "label": "IBM HTTP Server plugin enabled - IHSNode01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "ihsnode01"
+    },
+    {
+      "name": "IHSNode01_ihs_plugin_was_webserver_name",
+      "type": "string",
+      "description": "IBM HTTP Server Plugin Hostname, normally the FQDN",
+      "default": "webserver1",
+      "hidden": false,
+      "label": "IBM HTTP Server plugin hostname - IHSNode01",
+      "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "ihsnode01"
+    },
+    {
+      "name": "IHSNode01_ihs_plugin_install_dir",
+      "type": "string",
+      "description": "IBM HTTP Server Plugin Installation Direcrtory",
+      "default": "/opt/IBM/WebSphere/Plugins",
+      "hidden": false,
+      "label": "IBM HTTP Server plugin installation directory - IHSNode01",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -299,6 +292,28 @@
       "hidden": false,
       "label": "IBM HTTP Server username - IHSNode01",
       "secured": false,
+      "required": true,
+      "immutable": false,
+      "group_name": "ihsnode01"
+    },
+    {
+      "name": "IHSNode01_ihs_java_legacy",
+      "type": "string",
+      "description": "The Java version to be used with IBM HTTP Server version 8.5.5",
+      "hidden": false,
+      "label": "IBM HTTP Server v855 Java version - IHSNode01",
+      "secured": false,
+      "options": [
+        {
+          "value": "java6",
+          "label": "java6"
+        },
+        {
+          "value": "java8",
+          "label": "java8",
+          "default": true
+        }
+      ],
       "required": true,
       "immutable": false,
       "group_name": "ihsnode01"

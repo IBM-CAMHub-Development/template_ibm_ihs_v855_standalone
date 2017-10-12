@@ -1,4 +1,4 @@
-# Template - IBM HTTP Server 8.5.5 on a single VM
+# Template - IBM HTTP Server V8.5.5 on a single virtual machine
 Template Version - 1.0
 
 ## Description
@@ -29,8 +29,8 @@ Ubuntu 14.04 LTS<br>
 <br>
 ### Software Deployed
 
-IBM HTTP Server for WebSphere Application Server V855<br>
-Web Server Plug-ins for IBM WebSphere Application Server V855<br>
+IBM HTTP Server for WebSphere Application Server V8.5.5<br>
+Web Server Plug-ins for IBM WebSphere Application Server V8.5.5<br>
 IBM SDK, Java Technology Edition V8<br>
 <br>
 ### Default Virtual Machine Settings

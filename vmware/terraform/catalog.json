@@ -1,5 +1,5 @@
 {
-    "name": "IBM HTTP Server 8.5.5 on a single VM - VMware vSphere",
+    "name": "IBM HTTP Server V8.5.5 on a single virtual machine - VMware vSphere",
     "description": "This template deploys a standalone instance of IBM HTTP Server 8.5.5 on a Linux virtual machine.",
     "version": "1.0",
     "imageUrl": "",
@@ -23,7 +23,7 @@
       }
     },
     "metadata": {
-      "displayName": "IBM HTTP Server 8.5.5 on a single VM",
+      "displayName": "IBM HTTP Server V8.5.5 on a single virtual machine",
       "providerDisplayName": "VMware vSphere",
       "longDescription": "This template deploys a standalone instance of IBM HTTP Server 8.5.5 on a Linux virtual machine.",
       "bullets": [{
@@ -40,7 +40,7 @@
     "description": "1 virtual machine:<br>  IBM HTTP Server instance<br>"},
 {
     "title": "Software Deployed",
-    "description": "IBM HTTP Server for WebSphere Application Server V855<br>Web Server Plug-ins for IBM WebSphere Application Server V855<br>IBM SDK, Java Technology Edition V8<br>"},
+    "description": "IBM HTTP Server for WebSphere Application Server V8.5.5<br>Web Server Plug-ins for IBM WebSphere Application Server V8.5.5<br>IBM SDK, Java Technology Edition V8<br>"},
 {
     "title": "Default Virtual Machine Settings",
     "description": " vCPU 1, Memory (GB) 2<br>"},
